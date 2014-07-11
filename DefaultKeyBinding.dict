@@ -11,7 +11,7 @@
 
 	// oooh, emacs
 	// delete word before cursor
-	"^w" = (deleteWordBackward:);
+	"^w" = "deleteWordBackward:";
 	// select word
 	"~w" = (selectWord:);
 	"~f" = "moveWordForward:";
@@ -21,7 +21,7 @@
 	"~v" = "pageUp:";
 	"~d" = "deleteWordForward:";
 	"~^h" = "deleteWordBackward:";
-	"~\010" = "deleteWordBackward:"; 
+	"~\010" = "deleteWordBackward:";
 	"~\177" = "deleteWordBackward:";
 	"^_"        = "undo:";
 	"^ "        = "setMark:";
@@ -47,7 +47,7 @@
 
 	// escape as complete? no thx
 	// "\033" = "complete:";
-	"~/"        = "complete:"; 
+	"~/"        = "complete:";
 
 	/* Meta shortcuts */
 	"~f"        = "moveWordForward:";               /* M-f          Move forward word */
@@ -101,9 +101,9 @@
 			"-" = ("insertText:", "←");
 		};
 		"c" = { "c" = { "c" = { "p" = ("insertText:", "☭"); }; }; };
-		"u" = {"m" = {"b" = {"r" = {"e" = {"l" = {"l" = {"a" = ("insertText:", "☂" ); }; }; }; }; }; }; };
+		"u" = { "m" = { "b" = { "r" = { "e" = { "l" = { "l" = { "a" = ( "insertText:", "☂" ); }; }; }; }; }; }; };
 		"S" = {"|" = ("insertText:", "$" ); };
 		":" = {"(" = ("insertText:", "☹" ); };
-		
+
 	};
 }
