@@ -88,7 +88,7 @@
 	};
 
 	// COMPOSE KEY OMG
-	"\UF70C" = {
+	"\Uf70f" = {
 		"-" = {
 			">" = ("insertText:", "→");
 			"<" = ("insertText:", "←");
