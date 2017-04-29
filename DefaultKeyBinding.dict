@@ -1,87 +1,20 @@
 {
-	// > defaults write -g NSTextKillRingSize -string 6
-	"^y" = (yankAndSelect:);
-
-	// uppercase current paragraph
-	"^~U" = (setMark:, selectParagraph:, uppercaseWord:, swapWithMark:);
-	// lowercase current paragraph
-	// "^~l" = (setMark:, selectParagraph:, lowercaseWord:, swapWithMark:);
-	// titlecase paragraph
-	"^~t" = (setMark:, selectParagraph:, capitalizeWord:, swapWithMark:);
-
 	// oooh, emacs
 	"~f" = "moveWordForward:";
 	"~b" = "moveWordBackward:";
 	"~<" = "moveToBeginningOfDocument:";
 	"~>" = "moveToEndOfDocument:";
+	"^v" = "pageDown:";
 	"~v" = "pageUp:";
 	"~d" = "deleteWordForward:";
 	"~^h" = "deleteWordBackward:";
 	"~\010" = "deleteWordBackward:";
 	"~\177" = "deleteWordBackward:";
-	"^_"        = "undo:";
-	"^ "        = "setMark:";
-	"^\@"       = "setMark:";
-	"^w"        = "deleteToMark:";
-
-	"~y" = (setMark:, moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, copy:, swapWithMark:);
-	// cut paragraph
-	"~x" = (moveToBeginningOfParagraph:, moveToEndOfParagraphAndModifySelection:, cut:);
-
-	// blank line after current
-	"~o" = (moveToEndOfParagraph:, insertNewline:);
-
-	// add new line after this line and go there
-	"@\U000D" = (moveToEndOfParagraph:, insertNewline:);
-	// add new line before this line and go there
-	"@$\U000D" = (moveToBeginningOfParagraph:, moveLeft:, insertNewline:);
-
-	// repeat character before cursor
-	// this is a way to keep the lion keyhold menu, but still be able to prints lots of chars
-	// wheeeeeeeeeee
-	"~r" = (moveLeftAndModifySelection:, copy:, moveRight:, paste:);
-
-	// escape as complete? no thx
-	// "\033" = "complete:";
-	"~/"        = "complete:";
-
-	/* Meta shortcuts */
-	"~f"        = "moveWordForward:";               /* M-f          Move forward word */
-	"~b"        = "moveWordBackward:";              /* M-b          Move backward word */
-	"~<"        = "moveToBeginningOfDocument:";     /* M-<          Move to beginning of document */
-	"~>"        = "moveToEndOfDocument:";           /* M->          Move to end of document */
-	"~v"        = "pageUp:";                        /* M-v          Page Up */
-
-	"~c"        = ( "capitalizeWord:",              /* M-c          Capitalize */
-					"moveForward:",
-					"moveForward:");
-	"~u"        = ( "uppercaseWord:",               /* M-u          Uppercase */
-					"moveForward:",
-					"moveForward:");
-	"~l"        = ( "lowercaseWord:",               /* M-l          Lowercase */
-					"moveForward:",
-					"moveForward:");
-	"~d"        = "deleteWordForward:";             /* M-d          Delete word forward */
-	"^~h"       = "deleteWordBackward:";            /* M-C-h        Delete word backward */
-	"~\U007F"   = "deleteWordBackward:";            /* M-Bksp       Delete word backward */
-	"~t"        = "transposeWords:";                /* M-t          Transpose words */
-	"~\@"       = ( "setMark:",                     /* M-@          Mark word */
-					"moveWordForward:",
-					"swapWithMark");
-	"~h"        = ( "setMark:",                     /* M-h          Mark paragraph */
-					"moveToEndOfParagraph:",
-					"swapWithMark");
-
-	/* C-x shortcuts */
-	"^x" = {
-		"u"     = "undo:";
-		"k"     = "performClose:";
-		"f"    = "openDocument:";
-		"x"    = "swapWithMark:";
-		"m"    = "selectToMark:";
-		"s"    = "saveDocument:";
-		"w"    = "saveDocumentAs:";
-	};
+	"^_" = "undo:";
+	"^ " = "setMark:";
+	"^\@" = "setMark:";
+	"^w" = "deleteToMark:";
+	"~\U007F" = "deleteWordBackward:";
 
 	// COMPOSE KEY OMG
 	"§" = {
@@ -92,13 +25,13 @@
 			"L" = ("insertText:", "£");
 		};
 		"*" = {
-		  "*" = ("insertText:", "★");
+			"*" = ("insertText:", "★");
 			"8" = ("insertText:", "☆");
 		};
 		"." = {
 			"o" = ("insertText:", "•");
-		  "-" = ("insertText:", "·");
-		  "." = { "." = ("insertText:", "…"); };
+			"-" = ("insertText:", "·");
+			"." = { "." = ("insertText:", "…"); };
 		};
 		"<" = {
 			"3" = ("insertText:", "♥");
