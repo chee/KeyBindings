@@ -10,10 +10,6 @@
 	"^~t" = (setMark:, selectParagraph:, capitalizeWord:, swapWithMark:);
 
 	// oooh, emacs
-	// delete word before cursor
-	"^w" = "deleteWordBackward:";
-	// select word
-	"~w" = (selectWord:);
 	"~f" = "moveWordForward:";
 	"~b" = "moveWordBackward:";
 	"~<" = "moveToBeginningOfDocument:";
@@ -88,18 +84,62 @@
 	};
 
 	// COMPOSE KEY OMG
-	"\Uf70f" = {
+	"§" = {
 		"-" = {
 			">" = ("insertText:", "→");
 			"<" = ("insertText:", "←");
 			"-" = ("insertText:", "—");
 			"L" = ("insertText:", "£");
 		};
-		"." = { "." = { "." = ("insertText:", "…"); }; };
+		"*" = {
+		  "*" = ("insertText:", "★");
+			"8" = ("insertText:", "☆");
+		};
+		"." = {
+			"o" = ("insertText:", "•");
+		  "-" = ("insertText:", "·");
+		  "." = { "." = ("insertText:", "…"); };
+		};
 		"<" = {
 			"3" = ("insertText:", "♥");
 			"-" = ("insertText:", "←");
 		};
+		"1" = {
+			"1" = {
+				"0" = ("insertText:", "⅒");
+			};
+			"2" = ("insertText:", "½");
+			"3" = ("insertText:", "⅓");
+			"4" = ("insertText:", "¼");
+			"5" = ("insertText:", "⅕");
+			"6" = ("insertText:", "⅙");
+			"7" = ("insertText:", "⅐");
+			"8" = ("insertText:", "⅛");
+			"9" = ("insertText:", "⅑");
+			"s" = ("insertText:", "¹");
+		};
+		"2" = {
+			"3" = ("insertText:", "⅔");
+			"5" = ("insertText:", "⅖");
+			"s" = ("insertText:", "²");
+		};
+		"3" = {
+			"4" = ("insertText:", "¾");
+			"5" = ("insertText:", "⅗");
+			"8" = ("insertText:", "⅜");
+			"s" = ("insertText:", "³");
+		};
+		"4" = {
+			"5" = ("insertText:", "⅘");
+		};
+		"5" = {
+			"6" = ("insertText:", "⅚");
+			"8" = ("insertText:", "⅝");
+		};
+		"7" = {
+			"8" = ("insertText:", "⅞");
+		};
+		"h" = { "o" = { "o" = { "r" = { "a" = { "y" = ( "insertText:", "🎉" ); }; }; }; }; };
 		"c" = { "c" = { "c" = { "p" = ("insertText:", "☭"); }; }; };
 		"u" = { "m" = { "b" = { "r" = { "e" = { "l" = { "l" = { "a" = ( "insertText:", "☂" ); }; }; }; }; }; }; };
 		"S" = { "|" = ( "insertText:", "$" ); };
