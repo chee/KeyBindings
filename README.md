@@ -1,10 +1,9 @@
-KeyBindings
-===========
+# KeyBindings
 
-My ~/Library/KeyBindings/DefaultKeyBinding.dict ( thanks, Lri and others )
+my ~/Library/KeyBindings/DefaultKeyBinding.dict
 
 ```
 git clone git@github.com:chee/KeyBindings.git ~/Library/KeyBindings
 ```
 
-Help make OS X palatable.
+helps make macOS palatable
