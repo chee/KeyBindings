@@ -16,6 +16,11 @@
 	"^w" = "deleteToMark:";
 	"~\U007F" = "deleteWordBackward:";
 
+	"\UF729"  = "moveToBeginningOfParagraph:";
+	"\UF72B"  = "moveToEndOfParagraph:";
+	"$\UF729" = "moveToBeginningOfParagraphAndModifySelection:";
+	"$\UF72B" = "moveToEndOfParagraphAndModifySelection:";
+
 	// COMPOSE KEY OMG
 	"§" = {
 		"-" = {
