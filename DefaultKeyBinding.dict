@@ -21,7 +21,7 @@
 	"$\UF729" = "moveToBeginningOfParagraphAndModifySelection:";
 	"$\UF72B" = "moveToEndOfParagraphAndModifySelection:";
 
-	// COMPOSE KEY OMG
+	// COMPOSE KEY
 	"§" = {
 		"-" = {
 			">" = ("insertText:", "→");
